@@ -1,0 +1,19 @@
+.filter_selector {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    padding: 5%;
+}
+
+.filters-group, .order-group {
+    background-color: #F5F5F6;
+    padding: 5%;
+    width: 80%;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 4px;
+    margin-bottom:10px;
+}
+
+.prices-lider{
+    margin-top:20px;
+}

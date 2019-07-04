@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="form-control filter_selector" (change)="somethingChanged(form.value)">
+    <div class="filters-group">
+        <h3>Filters:</h3>
+        <input type="checkbox" class="form-control" formControlName="gfpiping" />GF Piping Systems products only<br>
+        <input type="checkbox" class="form-control" formControlName="coriolis" />Coriolis<br>
+        <input type="checkbox" class="form-control" formControlName="chemapp" />Chemical applications<br><br>
+        Price: [{{lowerprice}} - {{upperprice}}] <br>
+        <igx-slider [type]="sliderType.RANGE" [minValue]="0" [maxValue]="6500" class="form-control prices-lider" formControlName="price" (change)="somethingChanged(form.value)" (click)="getPriceRange($event)"></igx-slider>
+    </div>
+    <div class="order-group">
+        <h3>Order products by:</h3>
+        <select formControlName="orderSelect">
+                <option value="score">Order by Score</option>
+                <option value="name">Order by Name</option>
+                <option value="price">Order by Price</option>
+        </select>
+    </div>
+</form>
+

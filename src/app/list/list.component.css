@@ -1,0 +1,41 @@
+.page-wrapper{
+    margin-top:20px;
+}
+
+.product_list_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product_list_iamge{
+    max-height:180px;
+}
+
+.product_list_header{
+    min-height:110px;
+}
+
+.mat-paginator.paginator--centered {
+	display: flex;
+	justify-content: center;
+	background-color: #F5F5F6;
+    margin-top: 20px;
+  } 
+
+@media only screen and (max-width:479px){
+
+}
+
+@media only screen and (min-width:480px) and (max-width:991px){
+	.product_list_card{
+	    max-width: calc(100% / 3);
+	}
+}
+
+@media only screen and (min-width:992px){
+	.product_list_card{
+		max-width: calc(100% / 4);
+		margin: 5px;
+	}
+}

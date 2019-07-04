@@ -1,0 +1,15 @@
+<div class="page-wrapper">
+  <div class="product_list_container">
+    <mat-card *ngFor="let product of pagedList" class="product_list_card">
+      <mat-card-header class="product_list_header">
+        <mat-card-title>{{product.name}}</mat-card-title>
+        <mat-card-subtitle>{{product.brand}}</mat-card-subtitle>
+        <mat-card-subtitle>{{product.price}} €</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage class="product_list_iamge" src="{{product.image}}">
+      <mat-card-content>{{product.description}}</mat-card-content>
+    </mat-card>
+  </div>
+  <mat-paginator class="paginator--centered" [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+    (page)="pageEvent = OnPageChange($event)"></mat-paginator>
+</div>

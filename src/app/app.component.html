@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+        <span>Products List</span>
+</mat-toolbar>
+<div class="row">
+    <div class="left"><app-filters (selectedFilterChanged)="applySelection($event)"></app-filters></div>
+    <div class="right"><app-list></app-list></div>
+</div>
+<router-outlet></router-outlet>
